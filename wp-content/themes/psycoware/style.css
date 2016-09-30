@@ -2,7 +2,7 @@
 Theme Name:         PsycoWare Theme
 Theme URI:          http://psycoware.com/
 Description:        Plantilla a la medida desarrollada para la empresa Factor Humano en Linea y el sistema PsycoWare
-Version:            1.2
+Version:            1.0
 Author:             Fernando Achach
 Author URI:       	http://psycoware.com/
 Text Domain:        PsycoWare
@@ -21,7 +21,7 @@ body{
 }
 
 h1{
-	color: red;
+	color:#F07057 !important;
 }
 
 .header1{
@@ -150,3 +150,71 @@ background-color: #F07057;
     background-color: #F07057;
     color: #fff;
 }
+
+.social{
+    float: right;
+    
+}
+
+ol.commentlist,li.authorcomment,li.comment,#respond h3,form#commentform,input#submit{margin:0}
+ol.commentlist,ol.commentlist ul,form#commentform{padding:0}  
+ol.commentlist{border-bottom:1px solid #ccc} 
+ol.commentlist ul{margin:0 0 0 20px} 
+li.authorcomment,li.comment,form#commentform textarea,form#commentform input{border:1px solid #ccc}
+li.authorcomment,li.comment{padding:10px 0 0 10px;list-style:none;border-bottom:none} 
+
+.authorcomment{background:#deebf9} 
+ul.children ul{margin-left:20px} 
+ul.children li{border-right:none}
+
+
+a.comment-reply-link,.reply a:link,
+.comment-navigation .newer a,.comment-navigation .older a,input#submit{display:inline-block;text-align:center;cursor:pointer;color:#fff} 
+a.comment-reply-link,.reply a:link{padding:10px 0} a.comment-reply-link,.reply a:link,input#submit{width:90px} 
+a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover,
+.comment-navigation .older a:hover,input#submit:hover{text-decoration:none;} 
+a.comment-reply-link:hover,.reply a:hover,input#submit:hover{width:90px} 
+a.comment-reply-link:hover,.reply a:hover{padding:9px 0} 
+a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover,.comment-navigation .older a:hover{border:1px solid #ffffff} 
+.comment-navigation{margin:10px 0 10px 0} .comment-navigation:after,#respond:after{content:".";height:0;visibility:hidden} 
+.clear{clear:both}
+
+.comment-reply-link{
+    background: #8a6d3b;
+}
+
+.comment-metadata time{
+    color: #000000!important;
+}
+
+.comment-author b{
+    font-weight: bold!important;
+}
+
+.fn a {
+    color: #333;
+}
+
+.comment-author b{
+    color: #000000!important;
+}
+
+footer a, footer a:hover {
+    color: #000000!important;
+}
+
+.ir-arriba {
+    display:none;
+    padding:20px;
+    background:#024959;
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}
+
+  .class-submit input{
+    width: 120px;
+ }

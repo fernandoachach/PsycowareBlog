@@ -31,16 +31,19 @@
 		<?php endwhile; ?>
 
 		<!--<?php the_posts_navigation(); ?>-->
-		<div class ="hazCaso">
-		<nav class="pagination">
-		  <?php pagination_bar(); ?>
-		</nav>
-	</div>
+				<div class ="hazCaso">
+				<nav class="pagination">
+				  <?php pagination_bar(); ?>
+				</nav>
+				</div>
 	</div>
 
 
 </div>
 
 </div>
+
+
+
 
 <!--FIn del contenido del blog-->
