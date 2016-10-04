@@ -12,16 +12,49 @@ License URI:        http://opensource.org/licenses/MIT
 */
 
 
-
 body{
-	background-color: #ffffff;
+    background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size:14px; line-height:23px;
     margin:0; padding:0 !important;
 }
 
-h1{
-	color:#F07057 !important;
+
+b{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
+}
+
+}
+
+.entry-title a{
+    color: rgb(152, 120, 82);
+}
+
+.cat-item  a{
+    color: rgb(152, 120, 82);
+}
+
+li a{
+     color: rgb(152, 120, 82);
+}
+
+p a{
+     color: rgb(152, 120, 82);
+}
+
+.entry-title{
+    color: rgb(152, 120, 82);
+}
+
+a{
+    text-decoration: none;
+     color:rgb(152, 120, 82);
+}
+
+a:hover{
+    text-decoration: none;
+     color:rgb(152, 120, 82);
 }
 
 .header1{
@@ -34,7 +67,8 @@ h1{
 
 .homepicture{
 	width: 848px;
-	height: 364px;
+	height: 464px;
+
 }
 
 .item{
@@ -147,7 +181,7 @@ background-color: #F07057;
 
 .page-numbers{
     padding: 10px;
-    background-color: #F07057;
+    background-color: #8a6d3b;
     color: #fff;
 }
 
@@ -155,6 +189,17 @@ background-color: #F07057;
     float: right;
     
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #8a6d3b;
+    border-color: #2e6da4;
+}
+
+.btn-primary:hover{
+    background-color: #8a6d3b;
+}
+
 
 ol.commentlist,li.authorcomment,li.comment,#respond h3,form#commentform,input#submit{margin:0}
 ol.commentlist,ol.commentlist ul,form#commentform{padding:0}  
@@ -215,6 +260,61 @@ footer a, footer a:hover {
     right:20px;
 }
 
-  .class-submit input{
+  .otraClase{
     width: 120px;
  }
+
+ .entry-summary{
+    font-size: 1.1em;
+    text-align: justify;
+ }
+
+
+
+ /*Fiexeds*/
+
+@media (max-width: 767px) {
+    .homepicture {
+    width: 800px;
+    height: 159px;
+    }
+    .navbar  img {
+        margin-top: -35px;
+    }
+
+    .nav li{
+        width: 100%;
+    }
+
+}
+
+
+
+@media(min-width:1200px){
+
+    .mycontainer{
+        height: 90px!important;
+    }
+    .nav{
+        margin-top: 15px;
+    }
+
+}
+
+
+
+li{
+    list-style: none;
+}
+
+.label-default{
+    height: 20px;
+}
+
+header#page-title h1 {
+    color: #333!important;
+}
+
+li{
+    list-style: circle;
+    }

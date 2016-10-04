@@ -4,7 +4,7 @@
     <?php dynamic_sidebar('sidebar-primary'); ?>
     </div>
 
-    <div class="col-sm-9">
+    <div class="col-sm-9 ">
           <?php while (have_posts()) : the_post(); ?>
       <article <?php post_class(); ?>>
         <header>
@@ -26,11 +26,21 @@
                 <a href="#" class="rounded-icon social fa fa-pinterest"><!-- pinterest --></a>
                 <a href="#" class="rounded-icon social fa fa-linkedin"><!-- linkedin --></a>
               </p>
-        <p class="fsize16"> Tags:
-                <a class="label label-default light" href="#"><i class="fa fa-tags"></i> Business</a> 
-                <a class="label label-default light" href="#"><i class="fa fa-tags"></i> Design</a> 
-                <a class="label label-default light" href="#"><i class="fa fa-tags"></i> Technology</a> 
+
+              <p class="fsize16"> Tags:
+                  <?php $tags = get_tags();
+                
+                foreach ( $tags as $tag ) {
+                  $tag_link = get_tag_link( $tag->term_id );
+                      
+                  $html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug} label label-default light'>";
+                  $html .= '<i class="fa fa-tags"></i>';
+                  $html .= "{$tag->name}</a>";
+                }
+                $html .= '';
+                echo $html;?>
               </p>
+
             </div>
 
         <div class="divider"><!-- divider -->
@@ -41,7 +51,8 @@
           <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
         </footer>
 
-        <?php comments_template('/templates/comments.php'); ?>
+        <?php /*comments_template('/templates/comments.php'); */?>
+        <?php echo do_shortcode('[fbcomments]'); ?>
       </article>
 
 

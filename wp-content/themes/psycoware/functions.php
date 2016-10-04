@@ -29,11 +29,11 @@ unset($file, $filepath);
 
 
 function invocador(){
-
+  wp_register_style('estilo10', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' , array(),  false, null, 'all' );
   wp_register_style('myhojadeestilo', get_template_directory_uri().'/style.css', array(), true,null, 'all' );
   wp_register_style('fontawasome', get_template_directory_uri().'/css/font-awesome.min.css' , array(),  false, null, 'all' );
   wp_register_style('estilo2', get_template_directory_uri().'/cssJs/blog.css' , array(),  false, null, 'all' );
-  wp_register_style('estilo8', get_template_directory_uri().'/cssJs/orange.css', false, NULL, 'all' );
+  
   wp_register_style('estilo4', get_template_directory_uri().'/cssJs/essentials.css', false, NULL, 'all' );
   wp_register_style('estilo1', get_template_directory_uri().'/cssJs/animate.css', false, NULL, 'all' );
   wp_register_style('estilo5', get_template_directory_uri().'/cssJs/layout.css', false, NULL, 'all' );
@@ -42,6 +42,7 @@ function invocador(){
   wp_register_script('jsbootstrap', get_template_directory_uri().'/js/bootstrap.min.js', false, NULL, 'all' );
   wp_register_script('jsjquery', get_template_directory_uri().'/js/jquery-1.12.4.js', false, NULL, 'all' );
   wp_register_script('jsxxx', get_template_directory_uri().'/cssJs/scripts.js', false, NULL, 'all' );
+  
 
 
   wp_enqueue_style('fontawasome');
@@ -49,13 +50,14 @@ function invocador(){
   wp_enqueue_style('bootstrap2');
   wp_enqueue_style('myhojadeestilo');
   wp_enqueue_style('estilo2');
-  wp_enqueue_style('estilo8');
+  
   wp_enqueue_style('estilo4');
   wp_enqueue_style('estilo1');
   wp_enqueue_style('estilo3');
   wp_enqueue_style('estilo5');
   wp_enqueue_script('jsjquery');
   wp_enqueue_script('jsbootstrap');
+  wp_enqueue_style('estilo10');
   
   
 
@@ -65,7 +67,7 @@ add_action('wp_enqueue_scripts', 'invocador');
 
 
 function wpdocs_excerpt_more( $more ) {
-    return sprintf( '<br><a class="read-more" href="%1$s"><i class="fa fa-sign-out"></i> %2$s</a>',
+    return sprintf( '<br><br><br><a class="read-more" href="%1$s"><i class="fa fa-sign-out"></i> %2$s</a>',
         get_permalink( get_the_ID() ),
         __( 'Leer Más...', 'textdomain' )
     );

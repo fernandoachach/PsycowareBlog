@@ -195,9 +195,9 @@ function get_the_category_list( $separator = '', $parents='', $post_id = false )
 
 	$thelist = '';
 	if ( '' == $separator ) {
-		$thelist .= '<ul class="post-categories">';
+		$thelist .= '<">';
 		foreach ( $categories as $category ) {
-			$thelist .= "\n\t<li>";
+			$thelist .= "";
 			switch ( strtolower( $parents ) ) {
 				case 'multiple':
 					if ( $category->parent )
